@@ -9,3 +9,64 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: astra-child
 Template: astra
 */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+.post-grid-column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post-grid-item {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.post-grid-item:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-grid-item h2 {
+    margin-top: 0;
+}
+
+.post-grid-item p {
+    margin-bottom: 0;
+}
+
+.post-grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    color: #333;
+}
+
+.pagination .current-page {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+}
+
+.ast-container {
+    flex-direction: column;
+}
